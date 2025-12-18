@@ -7,6 +7,8 @@ android {
     defaultConfig {
         versionCode = 5
         versionName = "3.0"
+        minSdk = 34
+        base.archivesName.set("ims-vowifi")
     }
     buildTypes {
         release {
