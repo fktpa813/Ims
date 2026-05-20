@@ -8,6 +8,8 @@ android {
     defaultConfig {
         versionCode = 6
         versionName = "3.1"
+        minSdk = 34
+        base.archivesName.set("ims-vowifi")
     }
     buildTypes {
         release {
@@ -36,6 +38,10 @@ android {
     dependenciesInfo {
         includeInApk = false
     }
+    compileSdk {
+        version = release(36)
+    }
+    buildToolsVersion = "36.1.0"
 }
 
 dependencies {
